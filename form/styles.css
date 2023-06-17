@@ -1,0 +1,173 @@
+body{
+    width:100%;
+    margin:3.5em 0px 0px 0px;
+    background-color:#22A699;
+  }
+  
+  main{
+    margin:0 auto;
+    background-color:#F2BE22;
+    border-radius:10px;
+    max-width:750px;
+    box-shadow:-10px 10px;
+  }
+  
+  p{
+    margin-top:0px;
+  }
+  
+  #title, #description{
+    text-align:center;
+    
+  }
+  
+  #title{
+    padding:1.0em 0px 0px 0px;
+    font-size:32px;
+    font-family: candara;
+  }
+  
+  #description{
+    font-size:17px;
+    font-family: monospace;
+    font-weight: bold;
+  }
+  
+  #survey-form{
+    width:75%;
+    margin:25px auto 0px auto;
+    font-family: monospace;
+    font-weight: bold;
+    font-size:18px;
+  }
+  
+  fieldset{
+    border:none;
+    border-top:3px solid black;
+    padding:1em;
+  }
+  
+  /**/
+  
+  input,#dropdown{
+    width:100%;
+    margin:10px 0px 10px 0px;
+    padding:10px 5px 10px 10px;
+    font-size:15px;
+    font-family:monospace;
+    color:black;
+    border-radius:10px;
+    border:2px solid black;
+    box-shadow: -6px 6px;
+  }
+  
+  ::placeholder{
+    color:black;
+  }
+  
+  #radio-label{
+    width:100%;
+    display:block;
+  }
+  
+  input[type="radio"]{
+    width:25px;
+    height:18px;
+    vertical-align:-4px;
+    margin:10px 0px 0px 0px ;
+    box-shadow:none;
+  }
+  
+  #no{
+    margin-bottom:1.5em;
+  }
+  
+  /**/
+  p{
+    text-align: center;
+  }
+  
+  #eastern-section fieldset{
+    border:3px solid blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 1em;
+  }
+  
+  #western-section fieldset{
+    border:3px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 1em;
+  }
+  
+  #eastern,#western{
+    width:100%;
+    
+  }
+  
+  #eastern input{
+    width: 25px;
+    height:18px;
+    vertical-align:-4px;
+    margin:10px 0px 0px 0px ;
+    box-shadow:none;
+    
+  }
+  
+  #western input{
+    width:25px;
+    height:18px;
+    vertical-align:-4px;
+    margin:10px 0px 0px 0px ;
+    box-shadow:none;
+  }
+  
+  /**/
+  #reason{
+    width:100%;
+    border-radius:10px;
+    box-shadow:-10px 10px;
+    font-size:18px;
+    
+  }
+  
+  #submit{
+    margin-top: 1em;
+    width:100%;
+    font-family: monospace;
+    font-weight: bold;
+    font-size:18px;
+  }
+  
+  @media(min-width:30px){
+    #eastern-section fieldset{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    #western-section fieldset{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
+  }
+  
+  @media (min-width:700px) {
+    #eastern-section fieldset{
+      border:3px solid blue;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-bottom: 1em;
+    }
+    
+    #western-section fieldset{
+      border:3px solid red;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-bottom: 1em;
+    }
+  }
+  

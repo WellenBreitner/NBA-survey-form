@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0"  >
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <main>
+      <h1 id="title">NBA Champion 2024 Survey Form</h1>
+      <p id="description">Thank you for taking the time to fill the survey form</p>
+    
+    <section id="first-section">
+      
+      <form id="survey-form" method="post" action="afterSubmit.html">
+        <fieldset >
+        <label id="name-label">Name: <input id="name" type="text" name="user-name" placeholder="Enter your name" required/> </label>
+        
+        <label id="email-label">Email: <input id="email" type="email" name="email" placeholder="Enter your email" required/> </label>
+
+        <label id="number-label">Age: <input id="number" type="number" min=10 max=100 placeholder="Enter your age"/>
+        </fieldset>
+
+        <fieldset>
+          <label id="radio-label">Do you play basketball:<br> <input id="Yes" type="radio" name="play-basketball" value="Yes"/> Yes</label>
+      
+          <label id="radio-label"><input id="no" type="radio" name="play-basketball" value="No"/> No</label>
+      
+          <label id="select-label">Which position do you play:
+            <select id="dropdown" name="select">
+              <option value="">Select one</option>
+              <option value="Point guard">Point guard</option>
+              <option value="Shooting guard">Shooting guard</option>
+              <option value="Small forward">Small forward</option>
+              <option value="Power forward">Power forward</option>
+              <option value="Center">Center</option>
+              <option value="No play basketball">No play basketball</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset id="eastern-western">
+        <p>Which team do you think will win in NBA playoffs 2024?</p>
+        </fieldset>
+        
+        
+
+        <section id="eastern-section">
+          <p>Eastern</p>
+        <fieldset>
+          
+          <label id="eastern"><input id="Celtics" type="checkbox" name="eastern-team" value="Celtics"/> Celtics</label>
+          <label id="eastern"><input id="Nets" type="checkbox" name="eastern-team" value=" Nets"/> Nets</label>
+          <label id="eastern"><input id="Knicks" type="checkbox" name="eastern-team" value="Knicks" /> Knicks</label>
+          <label id="eastern"><input id="76ers" type="checkbox" name="eastern-team" value="76ers"/> 76ers</label>
+          <label id="eastern"><input id="Raptors" type="checkbox" name="eastern-team" value="Raptors"/> Raptors</label>
+          <label id="eastern"><input id="Bulls" type="checkbox" name="eastern-team" value="Bulls"/> Bulls</label>
+          <label id="eastern"><input id="Cleveland" type="checkbox" name="eastern-team" value="Cleveland"/> Cleveland</label>
+          <label id="eastern"><input id="Pistons" type="checkbox" name="eastern-team" value="Pistons"/> Pistons</label>
+          <label id="eastern"><input id="Pacers" type="checkbox" name="eastern-team" value="Pacers"/> Pacers</label>
+          <label id="eastern"><input id="Bucks" type="checkbox" name="eastern-team" value="Bucks"/> Bucks</label>
+          <label id="eastern"><input id="Atlanta" type="checkbox" name="eastern-team" value="Atlanta"/> Atlanta</label>
+          <label id="eastern"><input id="Hornets" type="checkbox" name="eastern-team" value="Hornets"/> Hornets</label>
+          <label id="eastern"><input id="Heat" type="checkbox" name="eastern-team" value="Heat"/> Heat</label>
+          <label id="eastern"><input id="Magic" type="checkbox" name="eastern-team" value="Magic"/> Magic</label>
+          <label id="eastern"><input id="Wizards" type="checkbox" name="eastern-team" value="Wizards"/> Wizards</label>
+        </fieldset>
+        </section>
+  
+        <section id="western-section">
+          <p>Western</p>
+        <fieldset>
+          <label id="western"><input id="Denver Nuggets" type="checkbox" name="western-team" value= "Nuggets"/> Nuggets</label>
+          <label id="western"><input id="Timberwolves" type="checkbox" name="western-team" value="Timberwolves"/> Timberwolves</label>
+          <label id="western"><input id="Oklahoma" type="checkbox" name="western-team" value="Oklahoma"/> Oklahoma</label>
+          <label id="western"><input id="Blazers" type="checkbox" name="western-team" value="Blazers"/> Blazers</label>
+          <label id="western"><input id="Utah Jazz" type="checkbox" name="western-team" value="Utah Jazz"/> Utah Jazz</label>
+          <label id="western"><input id="Warriors" type="checkbox" name="western-team" value="Warriors"/> Warriors</label>
+          <label id="western"><input id="LA Clippers" type="checkbox" name="western-team" value="LA Clippers"/> LA Clippers</label>
+          <label id="western"><input id="Lakers" type="checkbox" name="western-team" value="Lakers"/> Lakers</label>
+          <label id="western"><input id="Suns" type="checkbox" name="western-team" value="Suns"/> Suns</label>
+          <label id="western"><input id="Kings" type="checkbox" name="western-team" value="Kings"/> Kings</label>
+          <label id="western"><input id="Mavericks" type="checkbox" name="western-team" value="Mavericks"/> Mavericks</label>
+          <label id="western"><input id="Rockets" type="checkbox" name="western-team" value="Rockets"/> Rockets</label>
+          <label id="western"><input id="Memphis" type="checkbox" name="western-team" value="Memphis"/> Memphis</label>
+          <label id="western"><input id="Pelicans" type="checkbox" name="western-team" value="Pelicans"/> Pelicans</label>
+          <label id="western"><input id="Spurs" type="checkbox" name="western-team" value="Spurs"/> Spurs</label>
+        </fieldset>
+        </section>
+      
+    <section id="second-section">
+      <fieldset>
+        <label id="reason">
+          <textarea id="reason" rows="5" cols="10" name="textarea" placeholder="Enter the reason why you choose this team"></textarea>
+        </label>
+      
+
+        <label id="submit-button"><input id="submit" type="submit" name="submit" /></label>
+      </fieldset>
+    </section>
+    </form>
+    </main>
+
+    
+  </body>
+</html>
